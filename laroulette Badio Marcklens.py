@@ -12,9 +12,7 @@ while(rekomanse):
 
     chans = 1
     sko = 0
-    print(nbre)
     while chans <= 5:
-        print(chans)
         nbre1 = input("Antre nimewo ou chwazi a: ")
         nbre1 = int(nbre1)
         while(nbre1 < 0 or nbre1 > 100):
@@ -57,7 +55,7 @@ while(rekomanse):
 
 
     print(f"Sko total : {bazla[nom]}")
-    print("\n\n Ou vle kite jwet la??")
+    print("\n Ou vle kite jwet la??")
     k=input("Si ou vle kite jwet la peze K sinon peze nenpot lot bouton")
     if k=="K" or k=="k":
         rekomanse=False
