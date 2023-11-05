@@ -268,4 +268,29 @@ for element in diksyone27:
     if verif==1:
         nouvodiskyone27[element]=diksyone27[element]
 
-print(nouvodiskyone27)
+# print(nouvodiskyone27)
+
+
+#enonse28
+diksyone28={"a":1, "b": 2}
+tipl=list(tuple(diksyone28.items()))
+# print(tipl)
+
+
+#enonse29
+lis29=[("a",1), ("b",2)]
+diksyone29={}
+diksyone29.update(lis29)
+print(diksyone29)
+
+
+# #enonse30
+diksyone30={'nom':'Badio', 'prenom':'Marcklens', 'age':21}
+diksyone30_1={'nom':'Desrosiers', 'prenom':'Fidjenie Marie Fabienne', 'age':21, 'ville':"Delmas"}
+diksyone30_2={}
+tempo={}
+for element in diksyone30:
+    if element in diksyone30:
+        vale=diksyone30[element]+diksyone30_1[element]
+        diksyone30_2.update(=vale)
+print(diksyone30_2)
