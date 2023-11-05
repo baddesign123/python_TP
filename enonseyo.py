@@ -183,11 +183,15 @@ lis18_2=[]
 for element in lis18:
     if element not in lis18_1:
         lis18_2.append(element)
-print(lis18_2)
+# print(lis18_2)
 
 
-
-
+#Enonse19
+diksyone19={'nom':'Badio', 'prenom':'Marcklens', 'age':21}
+lis_kle=list(diksyone19.keys())
+lis_vale=list(diksyone19.values())
+print(lis_kle)
+print(lis_vale)
 
 
 
