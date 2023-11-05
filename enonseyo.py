@@ -194,6 +194,24 @@ print(lis_kle)
 print(lis_vale)
 
 
+#enonse20
+lis20=[1,2,3,4,10]
+lis20_1=[1,3,5,7,9,'badio']
+lis20_2=[2,4,6,8,10,'badio',10000]
+lissandoublon=lis20
+
+for a in lis20_1:
+    if a not in lis20_2 and a not in lissandoublon:
+        lissandoublon.append(a)
+
+for b in lis20_2:
+    if b not in lissandoublon:
+        lissandoublon.append(b)
+
+print(lissandoublon)
+        
+
+
 
 
 
