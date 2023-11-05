@@ -190,8 +190,8 @@ for element in lis18:
 diksyone19={'nom':'Badio', 'prenom':'Marcklens', 'age':21}
 lis_kle=list(diksyone19.keys())
 lis_vale=list(diksyone19.values())
-print(lis_kle)
-print(lis_vale)
+# print(lis_kle)
+# print(lis_vale)
 
 
 #enonse20
@@ -208,11 +208,64 @@ for b in lis20_2:
     if b not in lissandoublon:
         lissandoublon.append(b)
 
-print(lissandoublon)
+# print(lissandoublon)
         
 
+#Enonse21
+diksyone21={"nom":"Badio", "prenom":"Marcklens", "age":21, "niveau":"Licence"}
+lis_kle21=list(diksyone21.keys())
+lis_vale21=[]
+for element in lis_kle21:
+    lis_vale21.append(diksyone21[element])
+# print(lis_vale21)
+
+
+#enonse22
+# valeuser22=input("Antre on bagay la: ")
+# if valeuser22[0]=="{" and valeuser22[-1]=="}":
+#     print("Wi, gen prezans akolad nan sak antre a")
+# else:
+#     print("Pa gen akolad nan sak antre a")
+
+
+#enonse 23
+diksyone23={"nom":"Badio", "prenom":"Marcklens", "age":21, "niveau":"Licence"}
+print("kle yo se: ")
+for element in diksyone23:
+    print(element)
+print()
+
+#enonse 24
+diksyone23={"nom":"Badio", "prenom":"Marcklens", "age":21, "niveau":"Licence"}
+print("Vale yo se: ")
+for element in diksyone23:
+    print(diksyone23[element])
+print()
+
+#enonse 25
 
 
 
+#enonse 26
+diksyone26={"name": "Lub", "age": 14, "assets": ["laptop", "phone"]}
+lis=[]
+for element in diksyone26:
+    # print(type(diksyone26[element]))
+    if(type(diksyone26[element])==str):
+        diksyone26[element]=f'_{diksyone26[element]}_'
+# print(diksyone26)
 
 
+#enonse27
+diksyone27={"a": "12", "b": "abc", "c": "12r", "d":"90"}
+nouvodiskyone27={}
+lisnimero=["0","1","2","3","4","5","6","7","8","9"]
+for element in diksyone27:
+    verif=1
+    for ele in diksyone27[element]:
+        if ele not in lisnimero:
+            verif=0
+    if verif==1:
+        nouvodiskyone27[element]=diksyone27[element]
+
+print(nouvodiskyone27)
