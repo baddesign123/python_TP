@@ -243,7 +243,11 @@ for element in diksyone23:
 print()
 
 #enonse 25
-
+diksyone25={"name": "Lub", "age": 14, "assets": ["laptop", "phone"]}
+nouvodiksyone25={}
+for element in diksyone25:
+    nouvodiksyone25[element]=diksyone25[element]
+print(f'Nouvo diksyone a se {nouvodiksyone25}')
 
 
 #enonse 26
@@ -281,16 +285,16 @@ tipl=list(tuple(diksyone28.items()))
 lis29=[("a",1), ("b",2)]
 diksyone29={}
 diksyone29.update(lis29)
-print(diksyone29)
+# print(diksyone29)
 
 
 # #enonse30
-diksyone30={'nom':'Badio', 'prenom':'Marcklens', 'age':21}
-diksyone30_1={'nom':'Desrosiers', 'prenom':'Fidjenie Marie Fabienne', 'age':21, 'ville':"Delmas"}
-diksyone30_2={}
-tempo={}
-for element in diksyone30:
-    if element in diksyone30:
-        vale=diksyone30[element]+diksyone30_1[element]
-        diksyone30_2.update(=vale)
-print(diksyone30_2)
+# diksyone30={'nom':'Badio', 'prenom':'Marcklens', 'age':21}
+# diksyone30_1={'nom':'Desrosiers', 'prenom':'Fidjenie Marie Fabienne', 'age':21, 'ville':"Delmas"}
+# diksyone30_2={}
+# tempo={}
+# for element in diksyone30:
+#     if element in diksyone30:
+#         vale=diksyone30[element]+diksyone30_1[element]
+#         diksyone30_2.update(=vale)
+# print(diksyone30_2)
