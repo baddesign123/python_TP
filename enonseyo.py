@@ -1,3 +1,5 @@
+import random
+import string
 # enonse1
 chen1="jodi a se 2 novanm"
 chen_miniskil=chen1.lower()
@@ -288,13 +290,145 @@ diksyone29.update(lis29)
 # print(diksyone29)
 
 
-# #enonse30
-# diksyone30={'nom':'Badio', 'prenom':'Marcklens', 'age':21}
-# diksyone30_1={'nom':'Desrosiers', 'prenom':'Fidjenie Marie Fabienne', 'age':21, 'ville':"Delmas"}
-# diksyone30_2={}
-# tempo={}
-# for element in diksyone30:
-#     if element in diksyone30:
-#         vale=diksyone30[element]+diksyone30_1[element]
-#         diksyone30_2.update(=vale)
-# print(diksyone30_2)
+#enonse30
+def enonse30():
+    diksyone30={'nom':'Badio', 'prenom':'Marcklens', 'age':21, 'sexe': 'Masculin', 'Jesus':'Dieu'}
+    diksyone30_1={'nom':'Desrosiers', 'prenom':'Fidjenie Marie Fabienne', 'age':21.5, 'ville':"Delmas", 'sexe':"feminin"}
+    diksyone30_2={}
+    for element in diksyone30:
+        if element in diksyone30_1:
+            diksyone30_2[element]= diksyone30[element]+diksyone30_1[element]
+        else:
+            diksyone30_2[element]= diksyone30[element]
+    for element in diksyone30_1:
+        if element not in diksyone30_2:
+            diksyone30_2[element]= diksyone30_1[element]
+
+    print(diksyone30_2)
+
+# enonse30()
+
+
+
+
+#enonse31
+def enonse31(mo_a):
+    movire=""
+    long=len(mo_a)-1
+    while long>=0:
+        movire+=(mo_a[long])
+        long-=1
+    return movire
+# print(enonse31("Badio"))
+
+
+# enonse 32
+def enonse32():
+    alfabe="abcdefghijklmnopqrstuvwxyz"
+    kod=""
+    n=int(input("Antre kante vale kod la ap genyen: "))
+    while n<1:
+        n=int(input("li pa sipoze pi piti ke 1: "))
+    i=0
+    while i<n:
+        kod+=alfabe[random.randint(0,25)]
+        i+=1
+    print(kod)
+
+# enonse32()
+
+
+#enonse33
+def enonse33():
+    alfabe="abcdefghijklmnopqrstuvwxyz"
+    kod=""
+    n=int(input("Antre kante vale kod la ap genyen: "))
+    while n>26 or n<1:
+        n=int(input("li pa sipoze depase 26 epi pi piti ke 1: "))
+    i=0
+    while i<n:
+        alea=alfabe[random.randint(0,25)]
+        if alea not in kod:    
+            kod+=alea
+            i+=1
+    print(kod)
+
+# enonse33()
+
+#enonse34
+def enonse34():
+    alfanimerik="abcdefghijklmnopqrstuvwxyz1234567890"
+    kod=""
+    n=int(input("Antre kante vale kod la ap genyen: "))
+    while n>36 or n<1:
+        n=int(input("li pa sipoze depase 26 epi pi piti ke 1: "))
+    i=0
+    while i<n:
+        alea=alfanimerik[random.randint(0,35)]
+        if alea not in kod:    
+            kod+=alea
+            i+=1
+    print(kod)
+
+# enonse34()
+
+
+#enonse35
+# def enonse35():
+#     lischenn35=["badio","Marcklens","Desrosiers","Fidjenie"]
+
+# enonse35()
+
+
+#enonse36
+def enonse36(mo):
+    newmo=""
+    for element in mo:
+        newmo+=f"{element},"
+    return newmo
+
+# mo=input("Antre mo a: ")
+# print(enonse36(mo))
+
+
+#enonse37
+def enonse37():
+    alpha=string.ascii_uppercase
+    print(alpha)
+    mo_poukripte=input("Antre mo wap kripte a: ")
+    mo_poukripte=mo_poukripte.upper()
+    mokripte=""
+    for element in mo_poukripte:
+        
+        mokripte+=f'{alpha.index(element)}-'
+    print(mokripte)
+
+# enonse37()
+
+
+# enonse38
+
+def enonse38():
+    alpha=string.ascii_uppercase
+    mo_poudekripte=input("Antre mo wap kripte a: ")
+    mo_poudekripte=mo_poudekripte.split("-")
+    modekripte=""
+    for element in mo_poudekripte:
+        element=int(element)
+        modekripte+=alpha[element]
+    print(modekripte)
+
+# enonse38()
+
+
+#enonse39
+def enonse39(a,b):
+    temp=a
+    a=b
+    b=temp
+    tiplla=(a,b)
+    print(tiplla)
+
+enonse39(3,6)
+
+#enonse40
